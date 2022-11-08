@@ -41,7 +41,8 @@ export default function Test() {
             }}>
                 <div>Id: {x.id}</div>
                 <div>Site Name: {x.name}</div>
-                <a href={x.url}>Site Url: {x.url.split('.')[1]}</a>
+                <a href={`https://${x.url}`}>Site Url: {x.url.split('.')[1]}</a>
+
                 {
                     x.subData && displayData(x.subData, level)
                 }
